@@ -16,7 +16,8 @@ apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: mynodeproject
-  namespace: mynodeproject-demo
+  labels:
+    name: mynodeproject
 spec:
   selector:
     matchLabels:
@@ -30,5 +31,7 @@ spec:
       containers:
       - name:mynodeproject
         image: 197149372921.dkr.ecr.ca-central-1.amazonaws.com/mynodeproject:latest
+        ports:
+        - containerPort: 3000
       imagePullSecrets:
         - name: aws-ecr
