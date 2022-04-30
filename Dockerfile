@@ -1,6 +1,5 @@
-FROM node:buster as node
+FROM node:14 as node
 WORKDIR /code
-RUN apt-get -y update
 COPY package.json ./
 RUN npm install
 COPY . . 
