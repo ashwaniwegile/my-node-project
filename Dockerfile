@@ -1,4 +1,4 @@
-FROM node:12.0 as node
+FROM node:14.0 as node
 WORKDIR /code
 RUN apt-get -y update
 COPY package.json ./
