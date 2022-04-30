@@ -29,7 +29,7 @@ spec:
         app: mynodeproject
     spec:
       containers:
-      - name:mynodeproject
+      - name: mynodeproject
         image: 197149372921.dkr.ecr.ca-central-1.amazonaws.com/mynodeproject:latest
         ports:
         - containerPort: 3000
