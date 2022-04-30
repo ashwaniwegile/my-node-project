@@ -30,7 +30,5 @@ spec:
       containers:
       - name:mynodeproject
         image: 197149372921.dkr.ecr.ca-central-1.amazonaws.com/mynodeproject:latest
-        ports:
-        - containerPort: 3000
       imagePullSecrets:
         - name: aws-ecr
